@@ -1,0 +1,29 @@
+[
+  {
+    "roomId": 1,
+    "id": 1,
+    "name": "이인재",
+    "profileImage": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-944688949784349638/original/43e8f4d0-0a26-4258-8ea2-2b5a402474e9.jpeg?im_w=720",
+    "content": "안녕하세요",
+    "ratings": "2",
+    "createdAt": "2023-08-16 00:14:22"
+  },
+  {
+    "roomId": 1,
+    "id": 2,
+    "name": "이얀우",
+    "profileImage": "https://ca.slack-edge.com/TH0U6FBTN-U05CNSZS4ET-02b82fbf4c55-512",
+    "content": "hihihihi",
+    "ratings": "4",
+    "createdAt": "2023-08-14 00:14:22"
+  },
+  {
+    "roomId": 1,
+    "id": 3,
+    "name": "이얀우",
+    "profileImage": "https://ca.slack-edge.com/TH0U6FBTN-U05CNSZS4ET-02b82fbf4c55-512",
+    "content": "hihihihi",
+    "ratings": "1",
+    "createdAt": "2023-08-14 00:14:22"
+  }
+]

@@ -1,0 +1,113 @@
+.navbarContainer {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  padding: 20px 0;
+  background-color: white;
+  z-index: 5;
+
+  .navbarContentBox {
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fullExpanded {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .searchTitle {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+        }
+      }
+
+      .expandedSearchContainer {
+        width: 400px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        border: 1px solid #dddddd;
+        border-color: rgb(229 229 229);
+        border-radius: 100px;
+        padding: 0 20px 0 30px;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow:
+            0 4px 6px -1px rgb(0 0 0 / 0.1),
+            0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        &.expand {
+          opacity: 1;
+          visibility: visible;
+          transition: all ease 0.5s;
+        }
+
+        &.hide {
+          opacity: 0;
+          visibility: hidden;
+          transition: all ease 0.5s;
+        }
+
+        .searchCountryBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 6px;
+
+          .expandedSearchInputName {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+        .expandedSearchIconBox {
+          width: auto;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          background-color: red;
+          border-radius: 100px;
+          padding: 0 10px;
+
+          .expandedSearchIcon {
+            color: white;
+          }
+
+          .searchText {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

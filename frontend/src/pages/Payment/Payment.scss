@@ -1,0 +1,196 @@
+.paymentPageContainer {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 64px 0 48px;
+
+    .goToBackBtn {
+      font-size: 30px;
+      padding-bottom: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    .reservationBox {
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      .reservationInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        border-bottom: 1px solid #ebebeb;
+        padding: 40px 0;
+
+        .title {
+          font-size: 26px;
+        }
+
+        .dateBox {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h2 {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .pay {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding: 40px 0;
+
+        .title {
+          font-size: 26px;
+        }
+
+        .pointBox {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .pointBoxContent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .reserveBtnBox {
+        margin-top: 20px;
+
+        .reserveBtn {
+          width: 100%;
+          border: none;
+          border-radius: 10px;
+          padding: 20px;
+          background-color: #e31c5f;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .detailInfo {
+      max-width: 90%;
+      width: 80%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: 1px solid rgb(221, 221, 221);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 0 auto;
+      box-shadow:
+        0 4px 6px 3px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+      .placeInfoBox {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 20px;
+
+        .placeImage {
+          width: 130px;
+          height: 110px;
+          border-radius: 10px;
+        }
+
+        .placeInfo {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          gap: 30px;
+
+          h1 {
+            font-size: 18px;
+          }
+
+          .ratings {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .priceInfoContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 20px;
+
+        .title {
+          font-size: 22px;
+        }
+
+        .priceInfoBox {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .priceInfo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p:nth-child(1) {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .totalPriceInfoBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+
+        .title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

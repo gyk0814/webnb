@@ -1,0 +1,50 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 9px 40px;
+  border: 1px solid #dddddd;
+  border-color: rgb(229 229 229);
+  border-radius: 100px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  &.expand {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms ease;
+  }
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+  }
+
+  .searchInputName {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .searchIconBox {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+
+    .searchIcon {
+      color: white;
+    }
+  }
+}

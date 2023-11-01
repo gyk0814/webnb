@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/images/map.png",
+    "text": "한국"
+  },
+  {
+    "id": 2,
+    "image": "/images/map.png",
+    "text": "일본"
+  },
+  {
+    "id": 3,
+    "image": "/images/map.png",
+    "text": "동남아시아"
+  },
+  {
+    "id": 4,
+    "image": "/images/map.png",
+    "text": "이탈리아"
+  },
+  {
+    "id": 5,
+    "image": "/images/map.png",
+    "text": "미국"
+  },
+  {
+    "id": 6,
+    "image": "/images/map.png",
+    "text": "유럽"
+  }
+]

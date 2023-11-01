@@ -1,0 +1,115 @@
+@import '../../../../styles/variables.scss';
+
+$dotSize: 6px;
+$dotGap: 5px;
+
+.accomodationCard {
+  flex-basis: calc(25% - $cardGap);
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+
+  .boldText {
+    font-weight: 600;
+  }
+
+  .imgContainer {
+    position: relative;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &:hover .swipeBtnWrapper {
+      opacity: 1;
+    }
+
+    .imgWrapper {
+      display: flex;
+      transition: 0.5s;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 141/134;
+      }
+    }
+
+    .swipeBtnWrapper {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 12px;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: 0.25s;
+
+      .swipeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(white, 0.9);
+        border-radius: 50%;
+      }
+    }
+
+    .dotIndicatorContainer {
+      position: absolute;
+      left: 50%;
+      bottom: 12px;
+      display: flex;
+      align-items: center;
+      width: calc($dotSize * 5 + $dotGap * 4);
+      transform: translateX(-50%);
+      overflow: hidden;
+
+      .dotIndicatorWrapper {
+        display: flex;
+        gap: $dotGap;
+        height: 100%;
+        transition: 0.2s;
+
+        .dotIndicator {
+          width: $dotSize;
+          height: $dotSize;
+          border-radius: 50%;
+          background-color: white;
+          opacity: 0.6;
+
+          &.current {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    .titleWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 600;
+      }
+
+      .ratingWrapper {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+  }
+
+  .price {
+    margin-top: 6px;
+  }
+}

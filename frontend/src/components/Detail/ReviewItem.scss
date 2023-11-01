@@ -1,0 +1,33 @@
+.reviewItemContainer {
+  display: flex;
+  flex-direction: column;
+
+  .reviewItemHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+
+    .profileImage {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .reviewItemProfile {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .name {
+        font-weight: bold;
+      }
+
+      .date {
+        color: #717171;
+        font-size: 14px;
+      }
+    }
+  }
+}

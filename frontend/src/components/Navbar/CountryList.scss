@@ -1,0 +1,33 @@
+.countryListContainer {
+  position: absolute;
+  top: 110%;
+  width: 450px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 50px 0;
+  font-weight: 600;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+
+  .countryLisBox {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 14px;
+  }
+
+  .boxHeader {
+    font-weight: bold;
+  }
+
+  .boxBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,90 @@
+.calendarContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+  .calendarHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .arrowBtn {
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .calendars {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    user-select: none;
+
+    .calendar {
+      padding: 10px;
+      width: 100%;
+
+      h3 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.calendarCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20%;
+  cursor: pointer;
+
+  &.selectable {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &.selected {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+
+  &.reserved {
+    color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.calendarWeek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.emptyCell {
+  width: 30px;
+  height: 30px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  margin-left: 16%;
+}
+
+.calendarWeekday {
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}

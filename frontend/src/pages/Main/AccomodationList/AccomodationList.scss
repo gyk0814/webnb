@@ -1,0 +1,9 @@
+@import '../../../styles/variables.scss';
+
+.accomodationList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $cardGap;
+  row-gap: 40px;
+  margin-top: 16px;
+}
